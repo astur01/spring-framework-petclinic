@@ -27,15 +27,15 @@
         </tr>
     </table>
 
-    <spring:url value="{ownerId}/edit.html" var="editUrl">
+    <spring:url value="{ownerId}/edit" var="editUrl">
         <spring:param name="ownerId" value="${owner.id}"/>
     </spring:url>
-    <a href="${fn:escapeXml(editUrl)}" class="btn btn-default">Edit Owner</a>
+    <a href="${fn:escapeXml(editUrl)}" class="btn btn-primary">Edit Owner</a>
 
-    <spring:url value="{ownerId}/pets/new.html" var="addUrl">
+    <spring:url value="{ownerId}/pets/new" var="addUrl">
         <spring:param name="ownerId" value="${owner.id}"/>
     </spring:url>
-    <a href="${fn:escapeXml(addUrl)}" class="btn btn-default">Add New Pet</a>
+    <a href="${fn:escapeXml(addUrl)}" class="btn btn-primary">Add New Pet</a>
 
     <br/>
     <br/>
